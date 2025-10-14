@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Classroom Timetable</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin: 10px;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 4px;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+  }
+  th {
+    background-color: #ddd;
+  }
+  .yellow-row td {
+    background-color: yellow;
+    font-weight: bold;
+  }
+  .break-cell {
+    background-color: #f5f5f5;
+    font-weight: bold;
+  }
+  .time-col {
+    width: 70px;
+  }
+  .day-col {
+    width: 90px;
+  }
+</style>
+</head>
+<body>
+
+<h2>Class Room No.:- KC-602, KC-604, KC-605, KC-607</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th class="day-col">Day</th>
+      <th class="time-col">1<br>(8:50-9:40)</th>
+      <th class="time-col">2<br>(9:40-10:30)</th>
+      <th class="time-col">3<br>(10:40-11:30)</th>
+      <th class="time-col">4<br>(11:30-12:20)</th>
+      <th class="time-col">5<br>(12:20-1:10)</th>
+      <th style="width:90px;">(1:10-2:00 PM)</th>
+      <th class="time-col">6<br>(2:00-2:50)</th>
+      <th class="time-col">7<br>(2:50-3:40)</th>
+      <th class="time-col">8<br>(3:40-4:30)</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- Monday yellow separator row -->
+    <tr class="yellow-row"><td colspan="10"></td></tr>
+
+    <!-- Monday A -->
+    <tr>
+      <td>Monday A</td>
+      <td>BCS054/OOSD/(NB)/KC-Lab-FF</td>
+      <td>BCS502/WT/(BS)/KC-Lab-FF</td>
+      <td>BCS503/DAA/(SK)/KC-Lab-FF</td>
+      <td>BCS502/WT/(BS)/KC-Lab-FF</td>
+      <td>BCS501/DBMS/(ACH)/KC-Lab-FF</td>
+      <td rowspan="4" class="break-cell">BREAK</td>
+      <td>BCS056/AOSC/AA/KC-lab-Fifth Floor</td>
+      <td>DSA TRAINING/KC-Lab-FF</td>
+      <td>BCS551/DBMS/ LAB ( ACH, SW)/KC-lab-Fifth Floor</td>
+    </tr>
+
+    <!-- Monday B -->
+    <tr>
+      <td>Monday B</td>
+      <td>BCS054/OOSD/(MS)/KC-lab-Fifth Floor</td>
+      <td>BCS502/WT/(ANS)/KC-lab-Fifth Floor</td>
+      <td>BCS503/DAA/(MM)/KC-lab-Fifth Floor</td>
+      <td>BCS503/DAA/(MM)/KC-lab-Fifth Floor</td>
+      <td>BCS502/WT/(ANS)/KC-lab-Fifth Floor</td>
+      <td>BCS551/DBMS/ LAB ( ACH, SW)/KC-lab-Fifth Floor</td>
+    </tr>
+
+    <!-- Monday C -->
+    <tr>
+      <td>Monday C</td>
+      <td>BCS502/WT/(ST)/KC-609</td>
+      <td>BCS503/DAA/(MM)/KC-609</td>
+      <td>QA/LR (HARSHIT SHARMA)/KC-609</td>
+      <td></td>
+      <td>BCS501/DBMS/(SW)/KC-609</td>
+      <td>BCS553/DAA/ LAB(MM, SK)/KC-609</td>
+    </tr>
+
+    <!-- Monday D -->
+    <tr>
+      <td>Monday D</td>
+      <td>BCS501/DBMS/AA/KC-610</td>
+      <td>BCS503/DAA/(SK)/KC-610</td>
+      <td>BCS552/WT/ LAB(ANS, BS)/KC-610</td>
+      <td>FSD TRAINING(DIVYA RAJ)/KC-610</td>
+      <td></td>
+      <td>BCS054/OOSD/(MS)/KC-610</td>
+      <td>BCS054/OOSD/(MS)/KC-610</td>
+      <td>BCS056/AOSC/(SJ)/KC-610</td>
+    </tr>
+
+    <!-- Tuesday yellow separator row -->
+    <tr class="yellow-row"><td colspan="10"></td></tr>
+
+    <!-- Tuesday full row DSA TRAINING -->
+    <tr class="yellow-row">
+      <td colspan="10">DSA TRAINING/KC-Lab-FF</td>
+    </tr>
+
+    <!-- Tuesday A -->
+    <tr>
+      <td>Tuesday A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>BCS501/DBMS/(ACH)/KC-Lab-FF</td>
+      <td rowspan="4" class="break-cell">BREAK</td>
+      <td>BCS056/AOSC/(SJ)/KC-Lab-FF</td>
+      <td>BCS553/DAA/ LAB(SK, MM)/KC-Lab-FF</td>
+      <td></td>
+    </tr>
+
+    <!-- Tuesday B -->
+    <tr>
+      <td>Tuesday B</td>
+      <td>BCS552/WT/ LAB(ANS, ST)/KC-lab-Fifth Floor</td>
+      <td>BCS503/DAA/(MM)/KC-lab-Fifth Floor</td>
+      <td>QA/LR (HARSHIT SHARMA)/KC-lab-Fifth Floor</td>
+      <td>BCS501/DBMS/(ACH)/KC-lab-Fifth Floor</td>
+      <td></td>
+      <td>BCS552/WT/(ANS)/KC-lab-Fifth Floor</td>
+      <td>BCS054/OOSD/(MS)/KC-lab-Fifth Floor</td>
+      <td>BCS056/AOSC/AA/KC-lab-Fifth Floor</td>
+    </tr>
+
+    <!-- Tuesday C -->
+    <tr>
+      <td>Tuesday C</td>
+      <td>BCS054/OOSD/(MS)/KC-609</td>
+      <td>BCS502/WT/(ST)/KC-609</td>
+      <td>BCS501/DBMS/(SW)/KC-609</td>
+      <td>BCS056/AOSC/(SJ)/KC-609</td>
+      <td>BCS501/DBMS/(SW)/KC-609</td>
+      <td>BCS502/WT/(ST)/KC-609</td>
+      <td>BCS551/DBMS/ LAB ( SW, ACH)/KC-609</td>
+    </tr>
+
+    <!-- Tuesday D -->
+    <tr>
+      <td>Tuesday D</td>
+      <td>FSD TRAINING(DIVYA RAJ)/KC-610</td>
+      <td>BCS503/DAA/(SK)/KC-610</td>
+      <td>BCS502/WT/(ANS)/KC-610</td>
+      <td>BCS501/DBMS/AA/KC-610</td>
+      <td></td>
+      <td>DSA TRAINING/KC-610</td>
+    </tr>
+
+    <!-- Wednesday yellow separator row -->
+    <tr class="yellow-row"><td colspan="10"></td></tr>
+
+    <!-- Wednesday A -->
+    <tr>
+      <td>Wednesday A</td>
+      <td>SS (PUJA RUHTAGI)/KC-Lab-FF</td>
+      <td>BCS552/WT/ LAB( BS, SK)/KC-Lab-FF</td>
+      <td colspan="2">DOMAIN TRAINING/KC-Lab-FF</td>
+      <td>BCS502/WT/(BS)/KC-Lab-FF</td>
+      <td rowspan="4" class="break-cell">BREAK</td>
+      <td>FSD TRAINING(ASHISH BAJPAI)/KC-Lab-FF</td>
+      <td>BCS501/DBMS/(ACH)/KC-Lab-FF</td>
+      <td></td>
+    </tr>
+
+    <!-- Wednesday B -->
+    <tr>
+      <td>Wednesday B</td>
+      <td>FSD TRAINING(PRASHANT TOMER)/KC-lab-Fifth Floor</td>
+      <td colspan="2">DOMAIN TRAINING/KC-lab-Fifth Floor</td>
+      <td>BCS503/DAA/(MM)/KC-lab-Fifth Floor</td>
+      <td></td>
+      <td>BCS501/DBMS/(ACH)/KC-lab-Fifth Floor</td>
+      <td>BCS553/DAA/ LAB(MM, SK)/KC-lab-Fifth Floor</td>
+    </tr>
+
+    <!-- Wednesday C -->
+    <tr>
+      <td>Wednesday C</td>
+      <td>BCS503/DAA/(MM)/KC-609</td>
+      <td>BCS503/DAA/(MM)/KC-609</td>
+      <td>DOMAIN TRAINING/KC-609</td>
+      <td>BCS552/WT/ LAB( ST, SK)/KC-609</td>
+      <td></td>
+      <td>BCS054/OOSD/(MS)/KC-609</td>
+      <td>BCS054/OOSD/(MS)/KC-609</td>
+      <td>BCS056/AOSC/(SJ)/KC-609</td>
+    </tr>
+
+    <!-- Wednesday D -->
+    <tr>
+      <td>Wednesday D</td>
+      <td>BCS503/DAA/(SK)/KC-610</td>
+      <td>BCS502/WT/(ANS)/KC-610</td>
+      <td>DOMAIN TRAINING/KC-610</td>
+      <td>BCS501/DBMS/AA/KC-610</td>
+      <td></td>
+      <td>BCS056/AOSC/(SJ)/KC-610</td>
+      <td>BCS551/DBMS/ LAB ( AA, SW)/KC-610</td>
+    </tr>
+
+    <!-- Thursday yellow separator row -->
+    <tr class="yellow-row"><td colspan="10"></td></tr>
+
+    <!-- Thursday A -->
+    <tr>
+      <td>Thursday A</td>
+      <td>QA/LR (HARSHIT SHARMA)/KC-Lab-FF</td>
+      <td>BCS503/DAA/(SK)/KC-Lab-FF</td>
+      <td>BCS503/DAA/(SK)/KC-Lab-FF</td>
+      <td>BCS504/OOSD/(NB)/KC-Lab-FF</td>
+      <td></td>
+      <td>BCS056/AOSC/(SJ)/KC-Lab-FF</td>
+      <td>APPLIED AI TRAINING/ AT/KC-Lab-FF</td>
+      <td></td>
+    </tr>
+
+    <!-- Thursday B -->
+    <tr>
+      <td>Thursday B</td>
+      <td>DSA TRAINING/KC-lab-Fifth Floor</td>
+      <td></td>
+      <td>BCS502/WT/(ANS)/KC-lab-Fifth Floor</td>
+      <td>SS (PUJA RUHTAGI)/KC-lab-Fifth Floor</td>
+      <td></td>
+      <td>BCS501/DBMS/(ACH)/KC-lab-Fifth Floor</td>
+      <td>APPLIED AI TRAINING/ DM/KC-lab-Fifth Floor</td>
+      <td></td>
+    </tr>
+
+    <!-- Thursday C -->
+    <tr>
+      <td>Thursday C</td>
+      <td>DSA TRAINING//KC-609</td>
+      <td></td>
+      <td>FSD TRAINING(ROHINI MITTAL)/KC-609</td>
+      <td></td>
+      <td></td>
+      <td>SS (PUJA RUHTAGI)/KC-609</td>
+      <td>APPLIED AI TRAINING/ MM//KC-609</td>
+      <td></td>
+    </tr>
+
+    <!-- Thursday D -->
+    <tr>
+      <td>Thursday D</td>
+      <td>SS (PUJA RUHTAGI)/KC-610</td>
+      <td>BCS503/DAA/(SK)/KC-610</td>
+      <td>QA/LR (HARSHIT SHARMA)/KC-610</td>
+      <td>BCS502/WT/(ANS)/KC-610</td>
+      <td></td>
+      <td>BCS502/WT/(ANS)/KC-610</td>
+      <td>APPLIED AI TRAINING/ AV/KC-610</td>
+      <td></td>
+    </tr>
+
+    <!-- Friday yellow separator row -->
+    <tr class="yellow-row"><td colspan="10"></td></tr>
+
+    <!-- Friday A -->
+    <tr>
+      <td>Friday A</td>
+      <td>BCS551/DBMS/ LAB ( ACH, AA)/KC-Lab-FF</td>
+      <td></td>
+      <td>BCS503/DAA/(SK)/KC-Lab-FF</td>
+      <td>FSD TRAINING(ASHISH BAJPAI)/KC-Lab-FF</td>
+      <td></td>
+      <td>BCS054/OOSD/(NB)/KC-Lab-FF</td>
+      <td>BCS501/DBMS/(ACH)/KC-Lab-FF</td>
+      <td>BCS056/AOSC/(SJ)/KC-Lab-FF</td>
+    </tr>
+
+    <!-- Friday B -->
+    <tr>
+      <td>Friday B</td>
+      <td>FSD TRAINING(PRASHANT TOMER)/KC-lab-Fifth Floor</td>
+      <td>BCS054/OOSD/(MS)/KC-lab-Fifth Floor</td>
+      <td>BCS501/DBMS/(ACH)/KC-lab-Fifth Floor</td>
+      <td>BCS056/AOSC/AA/KC-lab-Fifth Floor</td>
+      <td>DSA TRAINING/KC-lab-Fifth Floor</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <!-- Friday C -->
+    <tr>
+      <td>Friday C</td>
+      <td>BCS056/AOSC/(SJ)/KC-609</td>
+      <td>BCS503/DAA/(MM)/KC-609</td>
+      <td>BCS501/DBMS/(SW)/KC-609</td>
+      <td>FSD TRAINING(ROHINI MITTAL)/KC-609</td>
+      <td>DSA TRAINING//KC-609</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <!-- Friday D -->
+    <tr>
+      <td>Friday D</td>
+      <td>DSA TRAINING/KC-610</td>
+      <td>BCS501/DBMS/AA/KC-610</td>
+      <td>BCS056/AOSC/(SJ)/KC-610</td>
+      <td>BCS553/DAA/ LAB(SK, MM)/KC-610</td>
+      <td>BCS054/OOSD/(MS)/KC-610</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+  </tbody>
+</table>
+
+</body>
+</html>
